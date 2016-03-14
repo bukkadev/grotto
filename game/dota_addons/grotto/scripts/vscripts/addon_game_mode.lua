@@ -2,6 +2,7 @@
 
 require('internal/util')
 require('gamemode')
+require("libraries/buildinghelper")
 
 function Precache( context )
 --[[
@@ -15,6 +16,9 @@ function Precache( context )
   ]]
 
   DebugPrint("[BAREBONES] Performing pre-load precache")
+
+  -- Particles from Building Helper
+  PrecacheResource("particle_folder", "particles/buildinghelper", context) 
 
   -- Particles can be precached individually or by folder
   -- It it likely that precaching a single particle system will precache all of its children, but this may not be guaranteed
@@ -45,4 +49,11 @@ end
 function Activate()
   GameRules.GameMode = GameMode()
   GameRules.GameMode:InitGameMode()
+end
+
+
+-- skip team select?
+function GameMode:InitSettings()
+    GameRules:SetCustomGameSetupTimeout(0)
+    GameRules:SetCustomGameSetupAutoLaunchDelay(0)
 end

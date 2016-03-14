@@ -1,0 +1,26 @@
+// Action space entity:
+
+{
+	"title" : "", 				// Title of the action space
+	"board" : "",				// Board on which this action space can be found
+	"board_position" : [0,0],	// Position on board
+	"accumulating" : {			// Object for accumulating action spaces
+		"empty_amount" : 0,		// Amount of resources to add if the space is empty
+		"amount": 0,			// Amount of resources to add if the space is NOT empty
+		"resource": ""			// Type of resource to add
+	},
+	"card" : false,				// Indicates if action space is a card
+	"card_stage" : 0,			// Which stage the card can be revealed in
+	"sub_spaces":
+		[
+			{
+				"resources" : [], // Type and amount of resource it provides (ruby, dog, vegetable, ruby mine ...)
+				"actions"	: [], // Special actions that this space would trigger (imitation, furnishing, family growth)
+			}
+		],
+	"phrase" : 1,				// 1: and then / or
+								// 2: and / or
+								// 3: and then
+								// 4: either ... or
+	"disable_if_players": 0,	// If x amount of players this card will be disabled
+}

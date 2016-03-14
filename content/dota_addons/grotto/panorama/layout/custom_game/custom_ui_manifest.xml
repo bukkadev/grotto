@@ -49,6 +49,11 @@
     <!--<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/containers/container_base.xml" /-->
     <!--<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_progress.xml" /> -->
 
+
+    <!-- Building Helper -->
+    <CustomUIElement type="Hud"  layoutfile="file://{resources}/layout/custom_game/building_helper.xml" />
+    <CustomUIElement type="Hud"  layoutfile="file://{resources}/layout/custom_game/selection.xml" />
+
     <!-- From Overthrow.
 
         <CustomUIElement type="HudTopBar"           layoutfile="file://{resources}/layout/custom_game/multiteam_top_scoreboard.xml" />
