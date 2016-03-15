@@ -19,10 +19,10 @@ function Build( event )
     event:OnPreConstruction(function(vPos)
 
         -- Check for minimum height if defined
-        if not BuildingHelper:MeetsHeightCondition(vPos) then
-            SendErrorMessage(playerID, "#error_invalid_build_position")
-            return false
-        end
+        -- if not BuildingHelper:MeetsHeightCondition(vPos) then
+        --     SendErrorMessage(playerID, "#error_invalid_build_position")
+        --     return false
+        -- end
 
         -- If not enough resources to queue, stop
         if PlayerResource:GetGold(playerID) < gold_cost then
@@ -39,7 +39,7 @@ function Build( event )
         hero:ModifyGold(-gold_cost, true, 0)
 
         -- Play a sound
-        EmitSoundOnClient(playerID, "DOTA_Item.ObserverWard.Activate")
+        EmitSoundOnClient("DOTA_Item.ObserverWard.Activate", PlayerResource:GetPlayer(playerID))
     end)
 
     -- The construction failed and was never confirmed due to the gridnav being blocked in the attempted area
