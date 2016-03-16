@@ -56,6 +56,7 @@ function GameMode:InitGameMode()
     -- skip team select
     GameRules:SetCustomGameSetupTimeout(1)
     GameRules:SetCustomGameSetupAutoLaunchDelay(1)
-    GameRules:GetGameModeEntity():SetCameraDistanceOverride(2000) 
+    GameRules:GetGameModeEntity():SetCameraDistanceOverride(2500) 
     GameRules:GetGameModeEntity():SetFogOfWarDisabled( true )
+    GameRules:GetGameModeEntity():SetCustomGameForceHero("npc_dota_hero_lone_druid")
 end

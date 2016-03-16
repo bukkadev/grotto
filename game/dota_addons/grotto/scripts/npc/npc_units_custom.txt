@@ -157,7 +157,7 @@
         "StatusManaRegen"           "0"
     
         // Building Size
-        "ConstructionSize"          "6"
+        "ConstructionSize"          "7"
         "BlockPathingSize"          "0"
     }
 }
