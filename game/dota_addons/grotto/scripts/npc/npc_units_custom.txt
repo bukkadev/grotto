@@ -100,15 +100,12 @@
     {
         // Visual
         //-----------------------------
-        "Model"                     "models/props_structures/tower_good.vmdl"
-        "ModelScale"                "0.575"
-        "PedestalModel"             "models/props_structures/radiant_tower_base001.vmdl"
-        "PedestalModelScale"        "0.7"
+        "Model"                     "models/fence_2_small.vmdl"
+        "ModelScale"                "1"
         "DestructionEffect"         "particles/radiant_fx/tower_good3_dest_lvl3_hit.vpcf"
         "ProjectileModel"           "particles/units/heroes/hero_mirana/mirana_base_attack.vpcf"  
         "MinimapIcon"               "minimap_tower90"
         "MinimapIconSize"           "320"
-        "SoundSet"                  "Hero_Mirana"
         "GameSoundsFile"            "soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts"
     
         // Stats
@@ -137,7 +134,7 @@
         // General
         //-----------------------------
         "BaseClass"                 "npc_dota_creature"
-        "ArmorPhysical"             "0"
+        "ArmorPhysical"             "2"
         "MagicalResistance"         "0"
         "BoundsHullName"            "DOTA_HULL_SIZE_BUILDING"
         "TeamName"                  "DOTA_TEAM_GOODGUYS"
@@ -149,8 +146,8 @@
         "AttackCapabilities"        "DOTA_UNIT_CAP_RANGED_ATTACK"
         "AttackDamageType"          "DAMAGE_TYPE_ArmorPhysical"
         "AttackAnimationPoint"      "0"
-        "ProjectileCollisionSize"   "50"
-        "RingRadius"                "80"
+        "ProjectileCollisionSize"   "0"
+        "RingRadius"                "0"
         "MovementCapabilities"      "DOTA_UNIT_CAP_MOVE_NONE"
         "MovementSpeed"             "0"
         "MovementTurnRate"          "1.0"
@@ -160,7 +157,7 @@
         "StatusManaRegen"           "0"
     
         // Building Size
-        "ConstructionSize"          "2"
+        "ConstructionSize"          "6"
         "BlockPathingSize"          "0"
     }
 }

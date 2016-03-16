@@ -52,8 +52,10 @@ function Activate()
 end
 
 
--- skip team select?
-function GameMode:InitSettings()
-    GameRules:SetCustomGameSetupTimeout(0)
-    GameRules:SetCustomGameSetupAutoLaunchDelay(0)
+function GameMode:InitGameMode()
+    -- skip team select
+    GameRules:SetCustomGameSetupTimeout(1)
+    GameRules:SetCustomGameSetupAutoLaunchDelay(1)
+    GameRules:GetGameModeEntity():SetCameraDistanceOverride(2000) 
+    GameRules:GetGameModeEntity():SetFogOfWarDisabled( true )
 end
